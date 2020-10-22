@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function myFunction1() {
+            document.getElementById("demo1").innerHTML = "段落已被更改";
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Head中的JavaScript</h2>
+    <p id="demo1">一个段落 HEAD</p>
+    <button type="button" onclick="myFunction1()">试一试 HEAD</button>
+
+    <h2>Body中的JavaScript</h2>
+    <p id="demo2">一个段落 BODY</p>
+    <button type="button" onclick="myFunction2()">试一试 BODY</button>
+
+    <h2>本地外部JavaScript</h2>
+    <p id="demo3">一个段落 本地外部</p>
+    <button type="button" onclick="myFunction3()">试一试</button>
+    <p>(myFunction3存储在名为myScript.js的外部文件中)</p>
+
+    <h2>网络外地的JavaScript</h2>
+    <p id="demo">一个段落 网络本地</p>
+    <button type="button" onclick="myFunction()">试一试</button>
+    <p>(myFunction存储在https://www.w3school.com.cn/demo/myScript.js中)</p>
+
+    <script src="https://www.w3school.com.cn/demo/myScript.js"></script>
+    <script src="myScript.js"></script>
+    <script>
+        function myFunction2() {
+            document.getElementById("demo2").innerHTML = "段落已被更改";
+        }
+    </script>
+
+</body>
+
+</html>

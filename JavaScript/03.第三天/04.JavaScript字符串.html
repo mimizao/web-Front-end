@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>JavaScript字符串</h1>
+    <p>转义字符\"在字符串中插入双引号。</p>
+    <p id="demo"></p>
+    <p id="demo1">关于字符串的类型</p>
+    <p id="demo2">字符串y和z是否相等(使用==)</p>
+    <p id="demo3">字符串y和z是否相等(使用===)</p>
+    <script>
+        var x = "中国是瓷器的故乡，因此china与\"中国\"同名。";
+        document.getElementById("demo").innerHTML = x;
+        var y = "a";
+        var z = new String("a");
+        document.getElementById("demo1").innerHTML = "y的数据类型：" + typeof y + "</br>" + "z的数据类型：" + typeof z;
+        document.getElementById("demo2").innerHTML = "字符串y和z是否相等(使用==)：" + (y == z);
+        document.getElementById("demo3").innerHTML = "字符串y和z是否相等(使用===)：" + (y === z);
+    </script>
+</body>
+
+</html>

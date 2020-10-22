@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>使用 innerHTML</h2>
+    <p id="demo1">这里是要改变的地方</p>
+    <h2>write</h2>
+    <p>注意，在HTML文档完全加载后使用document.write()将删除所有已有的HTML</p>
+    <button type="button" onclick="document.write(5+6)">试一下</button>
+    </br>
+
+    <script>
+        document.getElementById("demo1").innerHTML = 5 + 6;
+        document.write(5 + 6);
+        window.alert(5 + 6);
+    </script>
+
+</body>
+
+</html>

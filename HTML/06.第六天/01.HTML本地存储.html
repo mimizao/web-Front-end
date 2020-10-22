@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--这里是localStorage存储模式，这种模式的存储就算关闭浏览器之后还会继续保存-->
+        <script>          
+            function clickCounter(){
+                if(typeof(Storage)!=="undefined"){
+                    if(localStorage.clickCounter){
+                        localStorage.clickCounter=Number(localStorage.clickCounter)+1;
+                    }else{
+                        localStorage.clickCounter=1;
+                    }
+                    document.getElementById("result").innerHTML="您已经点击这个按钮"+localStorage.clickCounter+"次。";
+                }else{
+                    document.getElementById("result").innerHTML="抱歉！您的浏览器不支持Web本地存储...";
+                }
+            }
+        </script>
+        <!--这里是sessionStorage存储模式，这种模式的存储关闭了浏览器之后就清空了
+        <script>
+            function clickCounter(){
+                if(typeof(Storage)!=="undefined"){
+                    if(sessionStorage.clickCounter){
+                        sessionStorage.clickCounter=Number(sessionStorage.clickCounter)+1;
+                    }else{
+                        sessionStorage.clickCounter=1;
+                    }
+                    document.getElementById("result").innerHTML="您已经点击这个按钮"+sessionStorage.clickCounter+"次。";
+                }else{
+                    document.getElementById("result").innerHTML="抱歉！您的电脑不支持Web本地存储...";
+                }
+            }
+        </script>
+        -->
+    </head>
+    <body>
+        <p><button onclick="clickCounter()" type="button">请点击这里！</button></p>
+        <div id="result"></div>
+        <p>请点击按钮使计数器递增。</p>
+        <p>请关闭浏览器或标签页，然后再试一次，计数器将继续计数（不会重置）。</p>
+    </body>
+</html>
