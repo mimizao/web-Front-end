@@ -15,7 +15,7 @@
             "name": "使用本机 Chrome 调试",
             "type": "chrome",
             "request": "launch",
-            "file": "${workspaceRoot}/JavaScript\\03.第三天\\01.JavaScript函数.html",
+            "file": "${workspaceRoot}/JavaScript\\03.第三天\\05.JavaScript字符串方法.html",
             //  "url": "http://mysite.com/index.html", //使用外部服务器时,请注释掉 file, 改用 url, 并将 useBuildInServer 设置为 false "http://mysite.com/index.html
             "runtimeExecutable": "C:\\Users\\biy.sun\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe", // 改成您的 Chrome 安装路径
             "sourceMaps": true,
