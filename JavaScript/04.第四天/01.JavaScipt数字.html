@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p>浮点的算数并不是100%准确：</p>
+    <p id="demo1"></p>
+    <p>但是乘法和除法是有用的：</p>
+    <p id="demo2"></p>
+    </br>
+
+    <p>如果是字符串的话</p>
+    <p>一个是字符串100，一个是数字10</p>
+    <p>字符串+数字</p>
+    <p id="demo3"></p>
+    <p>字符串-数字</p>
+    <p id="demo4"></p>
+    <p>字符串*数字</p>
+    <p id="demo5"></p>
+    <p>字符串/数字</p>
+    <p id="demo6"></p>
+    </br>
+
+    <p>两个都是字符串，分别为100和10</p>
+    <p>字符串+数字</p>
+    <p id="demo7"></p>
+    <p>字符串-数字</p>
+    <p id="demo8"></p>
+    <p>字符串*数字</p>
+    <p id="demo9"></p>
+    <p>字符串/数字</p>
+    <p id="demo10"></p>
+    <p><b>总结：只要是有字符串，+的就还是按照字符串来</b></p>
+    </br>
+    <p>Infinity （或 -Infinity）是 JavaScript 在计算数时超出最大可能数范围时返回的值：</p>
+    <p id="demo11"></p>
+
+    <script>
+        var x = 0.2 + 0.1;
+        var y = (0.2 * 10 + 0.1 * 10) / 10
+        document.getElementById("demo1").innerHTML = x;
+        document.getElementById("demo2").innerHTML = y;
+
+        var a = "100";
+        var b = 10;
+        var c = a + b;
+        var d = a - b;
+        var e = a * b;
+        var f = a / b;
+        document.getElementById("demo3").innerHTML = c;
+        document.getElementById("demo4").innerHTML = d;
+        document.getElementById("demo5").innerHTML = e;
+        document.getElementById("demo6").innerHTML = f;
+
+        var g = a + b;
+        var h = a - b;
+        var i = a * b;
+        var j = a / b;
+        document.getElementById("demo7").innerHTML = g;
+        document.getElementById("demo8").innerHTML = h;
+        document.getElementById("demo9").innerHTML = i;
+        document.getElementById("demo10").innerHTML = j;
+
+        var myNumber = 2;
+        var txt = "";
+        while (myNumber != Infinity) {
+            myNumber = myNumber * myNumber;
+            txt = txt + myNumber + "</br>";
+        }
+        document.getElementById("demo11").innerHTML = txt;
+    </script>
+</body>
+
+</html>
